@@ -1,0 +1,10 @@
+.notice {
+  border: 0.25em solid $yellow;
+  margin: 5em 2.5em;
+  padding: 1em;
+
+  :first-child {
+    color: $yellow;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,420 @@
+---
+layout: page
+title: Learn how to solve a Rubik's cube
+permalink: /en/solve-a-rubiks-cube/
+---
+
+<h1>Learn how to solve a Rubik's Cube</h1>
+
+<p>This beginner tutorial should help you get started solving a Rubik's cube :-)</p>
+
+<aside class="index">
+  <ol>
+    <li>
+      <a href="#step-1">Step one: a cross</a>
+    </li>
+    <li>
+      <a href="#step-2">Step one: fill in the corners</a>
+    </li>
+    <li>
+      <a href="#step-3">Step three: make a cross on the top</a>
+    </li>
+    <li>
+      <a href="#step-4">Step four: make the top solid</a>
+    </li>
+    <li>
+      <a href="#step-5">Step five: cycling three cornerpieces</a>
+    </li>
+    <li>
+      <a href="#step-6">Step six: cycling three edgepieces</a>
+    </li>
+  </ol>
+</aside>
+
+
+
+<h2 id="step-1">Step one: a cross</h2>
+<p>Pick a side of the cube you want to solve first. Only with fiddling around you need to be able to slide the edges of that colour, so that they join the centerpiece. Usually the white side is easiest to start with.</p>
+<p>Be aware: the side needs to match colour of the adjecent centerpiece. So, the white-red edgepiece needs to be between to the white and red centerpieces.</p>
+<p>Target is to create a cross on the selected side.</p>
+
+<aside class="examples">
+  <h3>Examples: matching the first edgepiece</h3>
+  <h4>Edgepiece from the middle layer to the layer</h4>
+  <div class="cuberender no-moves">
+    <ul class="cube-layout">
+      <li class="f">* * * * R R * * *</li>
+      <li class="u">* * * * W * * * *</li>
+      <li class="r">* W * * B * * * *</li>
+      <li class="l">* * * * G * * * *</li>
+      <li class="b">* * * * O * * * *</li>
+      <li class="d">* * * * Y * * * *</li>
+    </ul>
+
+    <ol class="moves">
+      <li>Fi</li>
+    </ol>
+  </div>
+
+  <h4>You can always freely rotate the top layer</h4>
+  <div class="cuberender no-moves">
+    <ul class="cube-layout">
+      <li class="f">* R * * R B * * *</li>
+      <li class="u">* W * * W * * * *</li>
+      <li class="r">* W * * B * * * *</li>
+      <li class="l">* * * * G * * * *</li>
+      <li class="b">* * * * O * * * *</li>
+      <li class="d">* * * * Y * * * *</li>
+    </ul>
+
+    <ol class="moves">
+      <li>U</li>
+      <li>Fi</li>
+      <li>Ui</li>
+    </ol>
+  </div>
+
+  <h4>Edgepiece is on the bottom layer</h4>
+  <p>Sometimes you'll have to move an already solved piece away (and back later) to position other pieces.
+  <div class="cuberender no-moves">
+    <ul class="cube-layout">
+      <li class="f">* R * * R * * W *</li>
+      <li class="u">* W * * W * * * *</li>
+      <li class="r">* * * * B * * * *</li>
+      <li class="l">* * * * G * * * *</li>
+      <li class="b">* * * * O * * * *</li>
+      <li class="d">* B * * Y * * * *</li>
+    </ul>
+
+    <ol class="moves">
+      <li>Fi</li>
+      <li>R</li>
+      <li>F</li>
+    </ol>
+  </div>
+
+  <h4>Edgepiece is on the bottom layer</h4>
+  <p>You can also freely rotate the bottom layer.</p>
+  <div class="cuberender no-moves">
+    <ul class="cube-layout">
+      <li class="f">* R * * R * * B *</li>
+      <li class="u">* W * * W * * * *</li>
+      <li class="r">* * * * B * * * *</li>
+      <li class="l">* * * * G * * * *</li>
+      <li class="b">* * * * O * * * *</li>
+      <li class="d">* W * * Y * * * *</li>
+    </ul>
+
+    <ol class="moves">
+      <li>D</li>
+      <li>R2</li>
+      <li>Di</li>
+    </ol>
+  </div>
+</aside>
+
+<aside class="notice">
+  <h3>Notice</h3>
+  <p>In general you want to adopt a "feeling" for solving this cross. Try it at least a few times, but since it is step one you will solve this part quite often.</p>
+</aside>
+
+
+
+
+<h2 id="step-2">Step two: fill in the corners</h2>
+<p>There are four cornerpieces that belong to the side you picked. Together with the edgepieces they will form the first two layers.</p>
+<p>Notice that, because you made the cross, you can only move the opposite side freely. To solve the duo of a cornerpiece and edgepiece, you'll need to get both to the top layer. If a piece you need is not there, you can move one side, move the piece away and move the moved side back.</p>
+<p>Position the cornerpiece and edgepiece such that they are diagonal. With practise you'll find three possible combinations on how to slide both into the correct spot.</p>
+
+
+
+
+
+<aside class="examples">
+  <h3>Examples</h3>
+  <h4>Two equally colored sides on top</h4>
+  <p>Position the cornerpiece with the cross-colour (red-green-white) in such a case, that the "opposite" slot does not matter (one you have not solved yet.) For example, the slot between green and orange has yet to be filled, and does not matter.</p>
+  <p>Rotate that slot up, and match the two pieces together.</p>
+  <div class="cuberender no-moves">
+    <ul class="cube-layout">
+      <li class="f">* * R * R * * R *</li>
+      <li class="u">G * * * Y * * G *</li>
+      <li class="r">* * W G G * * * *</li>
+      <li class="l">* * * * B B * * *</li>
+      <li class="b">* R * * O * * O *</li>
+      <li class="d">* W * W W W * W *</li>
+    </ul>
+
+    <ol class="moves">
+      <li>Ri</li>
+      <li>U2</li>
+      <li>R</li>
+      <li>Ui</li>
+      <li>Fi</li>
+      <li>U</li>
+      <li>F</li>
+    </ol>
+  </div>
+
+  <h4>Two unequally colored sides on top</h4>
+  <p>Position the cornerpiece with the cross-colour (red-green-white) above the slot you want to fill. Rotate so that the two colours match.</p>
+  <div class="cuberender no-moves">
+    <ul class="cube-layout">
+      <li class="f">* * R * R * * R *</li>
+      <li class="u">G * * * Y * * R *</li>
+      <li class="r">* * W G G * * * *</li>
+      <li class="l">* * * * B B * * *</li>
+      <li class="b">* G * * O * * O *</li>
+      <li class="d">* W * W W W * W *</li>
+    </ul>
+
+    <ol class="moves">
+      <li>R</li>
+      <li>U</li>
+      <li>Ri</li>
+    </ol>
+  </div>
+
+  <h4>Cross-colour on top</h4>
+  <p>First, align the colors. In this example green needs to be aligned.</p>
+  <p>Rotate away, and match the cornerpiece with the cross-colour (red-green-white.) Rotate back.</p>
+  <div class="cuberender no-moves">
+    <ul class="cube-layout">
+      <li class="f">* * G * R * * R *</li>
+      <li class="u">W * * * Y * * R *</li>
+      <li class="r">* * R G G * * * *</li>
+      <li class="l">* * * * B B * * *</li>
+      <li class="b">* G * * O * * O *</li>
+      <li class="d">* W * W W W * W *</li>
+    </ul>
+
+    <ol class="moves">
+      <li>U</li>
+      <li>R</li>
+      <li>U2</li>
+      <li>Ri</li>
+      <li>U</li>
+      <li>R</li>
+      <li>Ui</li>
+      <li>Ri</li>
+    </ol>
+  </div>
+</aside>
+
+
+
+
+
+
+
+<h2>Algorithms</h2>
+<p>The top layer can be solved with algorithms for all possible (hundreds of) ways it might be organized, which requires a lot of memorization. However, the <strong>bare minimum</strong> is to learn four short algorithms.</p>
+<p>Algorithms are denoted by a series of letters. For example the <em><code>U</code></em> means to rotate the <b>up</b>-face clockwise, where <em><code>Ui</code></em> means to rotate the <b>up</b>-face the inverse way, counter-clockwise. The <code>D</code> for <b>down</b>-face will rotate the same direction as <em><code>U'</code></em>. (The clockwise means if you would view the cube from that side.)</p>
+<p>Other letters for movements are: <b>front</b>-face: <em><code>F</code></em>, <b>back</b>-face: <em><code>B</code></em>, <b>right</b>-face: <em><code>R</code></em> and <b>left</b>-face: <em><code>L</code></em>. All have a counter-clockwise version too.</p>
+<p>A small case version of the letters (<em><code>u f r b l d</code></em>) indicate moving the <strong>two layers</strong> as seen from that face. (An <em><code>r</code></em>-move is the same as a <em><code>L'</code></em> combined with rotating the whole cube.)</p>
+
+
+
+
+<h2 id="step-3">Step three: make a cross on the top</h2>
+<p>If you already have a cross at the top, there is no need to apply this algorithm. You could have either a dot, a bar or a corner.</p>
+<p>To get the cross, you will need to perform the algorithm <em><code>F R U Ri Ui Fi</code></em> one or more times. The examples below illustrate all three possibilities.</p>
+
+
+
+
+<aside class="examples">
+  <h3>Examples</h3>
+  <h4>From a bar to a cross</h4>
+  <div class="cuberender">
+    <ul class="cube-layout">
+      <li class="f">* Y * R R R R R R</li>
+      <li class="u">* * * Y Y Y * * *</li>
+      <li class="r">G G * G G * G G *</li>
+      <li class="l">* B B * B B * B B</li>
+      <li class="b">* Y * O O O O O O</li>
+      <li class="d">W W W W W W W W W</li>
+    </ul>
+
+    <ol class="moves">
+      <li>F</li>
+      <li>R</li>
+      <li>U</li>
+      <li>Ri</li>
+      <li>Ui</li>
+      <li>Fi</li>
+    </ol>
+  </div>
+  <h4>From a corner to a bar</h4>
+  <div class="cuberender">
+    <ul class="cube-layout">
+      <li class="f">* Y * R R R R R R</li>
+      <li class="u">* * * * Y Y * Y *</li>
+      <li class="r">G G * G G Y G G *</li>
+      <li class="l">* B B * B B * B B</li>
+      <li class="b">* * * O O O O O O</li>
+      <li class="d">W W W W W W W W W</li>
+    </ul>
+
+    <ol class="moves">
+      <li>F</li>
+      <li>R</li>
+      <li>U</li>
+      <li>Ri</li>
+      <li>Ui</li>
+      <li>Fi</li>
+    </ol>
+  </div>
+  <h4>From a dot to a cross</h4>
+  <div class="cuberender">
+    <ul class="cube-layout">
+      <li class="f">* Y * R R R R R R</li>
+      <li class="u">* * * * Y * * * *</li>
+      <li class="r">G G * G G Y G G *</li>
+      <li class="l">* B B Y B B * B B</li>
+      <li class="b">* Y * O O O O O O</li>
+      <li class="d">W W W W W W W W W</li>
+    </ul>
+
+    <ol class="moves">
+      <li>F</li>
+      <li>R</li>
+      <li>U</li>
+      <li>Ri</li>
+      <li>Ui</li>
+      <li>Fi</li>
+    </ol>
+  </div>
+</aside>
+
+
+
+<h2 id="step-4">Step four: make the top solid</h2>
+<p>In most cases, the four top cornerpieces need to be rotated, to have the correct parts of the cornerpieces facing up. It can be that all of them need to be solved, only three or two, or none. If there is only one cornerpiece that needs to be rotated, the cube has been tampered with.</p>
+<p>Place the cube with top up, and with one incorrect cornerpiece on the front right. If you perform this algorithm, the cornerpiece "flips" counter-clockwise, so you might need to do it twice.</p>
+<p><em><code>R' D' R D &nbsp; R' D' R D</code></em></p>
+<p><strong>Be aware</strong> that the bottom two layers will look weird. They will be returned to the correct state when performing the algorithm <strong>three times</strong>.</p>
+<p>when one cornerpiece is correct, rotate the top layer until another incorrect cornerpiece is in the front-right position. Perform the above algorithm again, and repeat these steps until all four top cornerpieces form a solid top colour.</p>
+
+
+
+
+<aside class="examples">
+  <h3>Examples</h3>
+  <h4>Two equally colored sides on top</h4>
+  <div class="cuberender">
+    <ul class="cube-layout">
+      <li class="f">* * * R R R R R R</li>
+      <li class="u">* Y Y Y Y Y * Y Y</li>
+      <li class="r">G G Y G G * G G Y</li>
+      <li class="l">* B B * B B * B B</li>
+      <li class="b">* * * O O O O O O</li>
+      <li class="d">W W W W W W W W W</li>
+    </ul>
+
+    <ol class="moves">
+      <li class="open-group">Ri</li>
+      <li>Di</li>
+      <li>R</li>
+      <li>D</li>
+      <li>Ri</li>
+      <li>Di</li>
+      <li>R</li>
+      <li class="close-group">D</li>
+      <li>U</li>
+      <li class="open-group">Ri</li>
+      <li>Di</li>
+      <li>R</li>
+      <li>D</li>
+      <li>Ri</li>
+      <li>Di</li>
+      <li>R</li>
+      <li class="close-group">D</li>
+      <li class="open-group">Ri</li>
+      <li>Di</li>
+      <li>R</li>
+      <li>D</li>
+      <li>Ri</li>
+      <li>Di</li>
+      <li>R</li>
+      <li class="close-group">D</li>
+    </ol>
+  </div>
+</aside>
+
+
+
+<h2 id="step-5">Step five: cycling three cornerpieces</h2>
+<p>Position a cornerpiece you <strong>don't</strong> want to cycle in the <strong>front-left</strong> position. The following algorithm cycles the back-left piece to the back-right position, the back-right piece to the front-right position and the front-right piece to the back-left position. The solid top colour remains intact.</p>
+<p><em><code>li U Ri D2 R Ui Ri D2 R2</code></em></p>
+<p>You might need to perform this tice to get the corners right.</p>
+
+
+
+<aside class="examples">
+  <h3>Examples</h3>
+  <h4>Cycling three cornerpieces</h4>
+  <div class="cuberender">
+    <ul class="cube-layout">
+      <li class="f">R * O R R R R R R</li>
+      <li class="u">Y Y Y Y Y Y Y Y Y</li>
+      <li class="r">G G B G G * G G R</li>
+      <li class="l">B B B * B B O B B</li>
+      <li class="b">G * G O O O O O O</li>
+      <li class="d">W W W W W W W W W</li>
+    </ul>
+
+    <ol class="moves">
+      <li>Li</li>
+      <li>Mi</li>
+      <li>U</li>
+      <li>Ri</li>
+      <li>D2</li>
+      <li>R</li>
+      <li>Ui</li>
+      <li>Ri</li>
+      <li>D2</li>
+      <li>R2</li>
+      <li>L</li>
+      <li>M</li>
+      <li>Ri</li>
+      <li>U2</li>
+    </ol>
+  </div>
+</aside>
+
+
+<h2 id="step-6">Step six: cycling three edgepieces</h2>
+<p>The last part involves putting the edgepieces in the correct place. You'll have either all edges correct, or there are three or four edges incorrect. In that case you can rotate three edges clockwise. The edge you don't want to cycle needs to be on the <b>front-left</b> position.</p>
+<p><em><code>Ri U Ri Ui Ri Ui Ri U R U R2</code></em></p>
+<p>There is a possibility you need to perform this also a couple of times to solve the cube correctly.</p>
+
+
+<aside class="examples">
+  <h3>Examples</h3>
+  <h4>Cycling three edgepieces</h4>
+  <div class="cuberender">
+    <ul class="cube-layout">
+      <li class="f">R R R R R R R R R</li>
+      <li class="u">Y Y Y Y Y Y Y Y Y</li>
+      <li class="r">G G G G G B G G G</li>
+      <li class="l">B B B O B B B B B</li>
+      <li class="b">O G O O O O O O O</li>
+      <li class="d">W W W W W W W W W</li>
+    </ul>
+
+    <ol class="moves">
+      <li>Ri</li>
+      <li>U</li>
+      <li>Ri</li>
+      <li>Ui</li>
+      <li>Ri</li>
+      <li>Ui</li>
+      <li>Ri</li>
+      <li>U</li>
+      <li>R</li>
+      <li>U</li>
+      <li>R2</li>
+    </ol>
+  </div>
+</aside>

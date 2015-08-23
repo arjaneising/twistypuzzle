@@ -1,0 +1,58 @@
+main {
+  margin: 2.5em auto;
+  max-width: 42em;
+
+  h1 {
+    color: $blue;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0.5em;
+  }
+
+  h2 {
+    border-bottom: 0.125em solid $base1;
+    color: $magenta;
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: normal;
+    margin: 1.5em 0 0.75em;
+    padding-bottom: 0.125em;
+  }
+
+  h3 {
+    color: $base00;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 1em 0 0.5em;
+  }
+
+  h4 {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  p + p {
+    margin-top: 1.5em;
+  }
+
+  hr {
+    border-bottom: 0.625em solid $base2;
+    height: 0;
+    margin: 2.5em 1.25em;
+  }
+
+  a {
+    color: $blue;
+    transition: color 0.3s;
+  }
+
+  a:visited {
+    color: $violet;
+  }
+
+  a:hover,
+  a:focus {
+    color: $base02;
+  }
+}

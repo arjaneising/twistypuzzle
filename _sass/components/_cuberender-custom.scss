@@ -1,0 +1,57 @@
+.cuberender {
+  background: $base3;
+  border: 0.25em solid $base2;
+
+  nav button {
+    background: $green;
+    border-radius: 0.125em;
+    color: $base2;
+    font-size: 1em;
+    padding: 0.25em 0.5em;
+    outline: none;
+  }
+
+  &.no-moves {
+    nav {
+      margin-bottom: 1em;
+    }
+
+    .moves {
+      display: none;
+    }
+  }
+
+  .moves {
+    font: 1em Monaco, Courier, monospace;
+
+    .open-group {
+      margin-left: 2em;
+      position: relative;
+
+      &::before {
+        color: $base00;
+        content: '(';
+        position: absolute;
+        right: 100%;
+        top: 0;
+      }
+    }
+
+    .close-group {
+      position: relative;
+      margin-right: 2em;
+
+      &::after {
+        color: $base00;
+        content: ')';
+        position: absolute;
+        left: 100%;
+        top: 0;
+      }
+    }
+
+    li.is-playing {
+      background: mix($yellow, $base3);
+    }
+  }
+}

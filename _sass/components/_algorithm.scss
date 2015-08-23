@@ -1,0 +1,9 @@
+em code {
+  background: mix($yellow, $base3);
+  display: inline-block;
+  font: 1em Monaco, Courier, monospace;
+  padding: 0.125em 0.25em;
+  margin: -0.125em;
+  z-index: -1;
+  position: relative;
+}
