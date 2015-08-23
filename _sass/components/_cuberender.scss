@@ -67,7 +67,6 @@
 .cuberender .cube .layer > * {
   background: black;
   -webkit-backface-visibility: hidden;
-     -moz-backface-visibility: hidden;
           backface-visibility: hidden;
   position: absolute;
   left: 0;
@@ -128,24 +127,24 @@
   width: 9em;
 }
 .cuberender .cube .top {
-  -webkit-transform: translateZ(3em);
-          transform: translateZ(3em);
+  -webkit-transform: translateZ(3.005em);
+          transform: translateZ(3.005em);
 }
 .cuberender .cube .top.rotate-clockwise {
-  -webkit-transform: translateZ(3em) rotateZ(90deg);
-          transform: translateZ(3em) rotateZ(90deg);
+  -webkit-transform: translateZ(3.005em) rotateZ(90deg);
+          transform: translateZ(3.005em) rotateZ(90deg);
   -webkit-transition: -webkit-transform 1.5s ease-in-out;
           transition: transform 1.5s ease-in-out;
 }
 .cuberender .cube .top.rotate-anticlockwise {
-  -webkit-transform: translateZ(3em) rotateZ(-90deg);
-          transform: translateZ(3em) rotateZ(-90deg);
+  -webkit-transform: translateZ(3.005em) rotateZ(-90deg);
+          transform: translateZ(3.005em) rotateZ(-90deg);
   -webkit-transition: -webkit-transform 1.5s ease-in-out;
           transition: transform 1.5s ease-in-out;
 }
 .cuberender .cube .top.rotate-twice {
-  -webkit-transform: translateZ(3em) rotateZ(-180deg);
-          transform: translateZ(3em) rotateZ(-180deg);
+  -webkit-transform: translateZ(3.005em) rotateZ(-180deg);
+          transform: translateZ(3.005em) rotateZ(-180deg);
   -webkit-transition: -webkit-transform 2s ease-in-out;
           transition: transform 2s ease-in-out;
 }
@@ -172,6 +171,6 @@
           transition: transform 2s ease-in-out;
 }
 .cuberender .cube .bottom {
-  -webkit-transform: translateZ(-3em);
-          transform: translateZ(-3em);
+  -webkit-transform: translateZ(-3.005em);
+          transform: translateZ(-3.005em);
 }
