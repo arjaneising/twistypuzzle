@@ -14,7 +14,7 @@ permalink: /en/solve-a-rubiks-cube/
       <a href="#step-1">Step one: a cross</a>
     </li>
     <li>
-      <a href="#step-2">Step one: fill in the corners</a>
+      <a href="#step-2">Step two: fill in the corners</a>
     </li>
     <li>
       <a href="#step-3">Step three: make a cross on the top</a>
@@ -209,9 +209,9 @@ permalink: /en/solve-a-rubiks-cube/
 
 <h2>Algorithms</h2>
 <p>The top layer can be solved with algorithms for all possible (hundreds of) ways it might be organized, which requires a lot of memorization. However, the <strong>bare minimum</strong> is to learn four short algorithms.</p>
-<p>Algorithms are denoted by a series of letters. For example the <em><code>U</code></em> means to rotate the <b>up</b>-face clockwise, where <em><code>Ui</code></em> means to rotate the <b>up</b>-face the inverse way, counter-clockwise. The <code>D</code> for <b>down</b>-face will rotate the same direction as <em><code>U'</code></em>. (The clockwise means if you would view the cube from that side.)</p>
+<p>Algorithms are denoted by a series of letters. For example the <em><code>U</code></em> means to rotate the <b>up</b>-face clockwise, where <em><code>Ui</code></em> means to rotate the <b>up</b>-face the inverse way, counter-clockwise. The <em><code>D</code></em> for <b>down</b>-face will rotate the same direction as <em><code>Ui</code></em>. (The clockwise means if you would view the cube from that side.)</p>
 <p>Other letters for movements are: <b>front</b>-face: <em><code>F</code></em>, <b>back</b>-face: <em><code>B</code></em>, <b>right</b>-face: <em><code>R</code></em> and <b>left</b>-face: <em><code>L</code></em>. All have a counter-clockwise version too.</p>
-<p>A small case version of the letters (<em><code>u f r b l d</code></em>) indicate moving the <strong>two layers</strong> as seen from that face. (An <em><code>r</code></em>-move is the same as a <em><code>L'</code></em> combined with rotating the whole cube.)</p>
+<p>A small case version of the letters (<em><code>u f r b l d</code></em>) indicate moving the <strong>two layers</strong> as seen from that face. (An <em><code>r</code></em>-move is the same as a <em><code>Li</code></em> combined with rotating the whole cube.)</p>
 
 
 
@@ -292,7 +292,7 @@ permalink: /en/solve-a-rubiks-cube/
 <h2 id="step-4">Step four: make the top solid</h2>
 <p>In most cases, the four top cornerpieces need to be rotated, to have the correct parts of the cornerpieces facing up. It can be that all of them need to be solved, only three or two, or none. If there is only one cornerpiece that needs to be rotated, the cube has been tampered with.</p>
 <p>Place the cube with top up, and with one incorrect cornerpiece on the front right. If you perform this algorithm, the cornerpiece "flips" counter-clockwise, so you might need to do it twice.</p>
-<p><em><code>R' D' R D &nbsp; R' D' R D</code></em></p>
+<p><em><code>Ri Di R D &nbsp; Ri Di R D</code></em></p>
 <p><strong>Be aware</strong> that the bottom two layers will look weird. They will be returned to the correct state when performing the algorithm <strong>three times</strong>.</p>
 <p>when one cornerpiece is correct, rotate the top layer until another incorrect cornerpiece is in the front-right position. Perform the above algorithm again, and repeat these steps until all four top cornerpieces form a solid top colour.</p>
 
