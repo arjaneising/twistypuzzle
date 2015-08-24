@@ -38,6 +38,11 @@ permalink: /en/solve-a-rubiks-cube/
 <p>Be aware: the side needs to match colour of the adjecent centerpiece. So, the white-red edgepiece needs to be between to the white and red centerpieces.</p>
 <p>Target is to create a cross on the selected side.</p>
 
+<aside class="notice">
+  <h3>About the gray…</h3>
+  <p>The gray parts on the cube indicate that they might be any colour.</p>
+</aside>
+
 <aside class="examples">
   <h3>Examples: matching the first edgepiece</h3>
   <h4>Edgepiece from the middle layer to the layer</h4>
@@ -118,17 +123,31 @@ permalink: /en/solve-a-rubiks-cube/
   <p>In general you want to adopt a "feeling" for solving this cross. Try it at least a few times, but since it is step one you will solve this part quite often.</p>
 </aside>
 
+<aside class="result">
+  <h3>Your cube should look like this:</h3>
+  <div class="cuberender no-moves">
+    <ul class="cube-layout">
+      <li class="f">* R * * R * * * *</li>
+      <li class="u">* W * W W W * W *</li>
+      <li class="r">* * * * B B * * *</li>
+      <li class="l">* * * G G * * * *</li>
+      <li class="b">* O * * O * * * *</li>
+      <li class="d">* * * * Y * * * *</li>
+    </ul>
 
+    <ol class="moves">
+      <li>U2</li>
+      <li>U2</li>
+    </ol>
+  </div>
+</aside>
+
+<hr>
 
 
 <h2 id="step-2">Step two: fill in the corners</h2>
 <p>There are four cornerpieces that belong to the side you picked. Together with the edgepieces they will form the first two layers.</p>
-<p>Notice that, because you made the cross, you can only move the opposite side freely. To solve the duo of a cornerpiece and edgepiece, you'll need to get both to the top layer. If a piece you need is not there, you can move one side, move the piece away and move the moved side back.</p>
-<p>Position the cornerpiece and edgepiece such that they are diagonal. With practise you'll find three possible combinations on how to slide both into the correct spot.</p>
-
-
-
-
+<p>Notice that, because you made the cross, you can only move the opposite side freely. To solve the duo of a cornerpiece and edgepiece, you'll need to get both to the top layer. If a piece you need is not there, you can move one side, move the piece away and move the moved side back. (Some examples on how to do that, are below the main examples.)</p>
 
 <aside class="examples">
   <h3>Examples</h3>
@@ -201,9 +220,74 @@ permalink: /en/solve-a-rubiks-cube/
   </div>
 </aside>
 
+<p>If you cannot find two pieces that belong together on the top layer, there are a few tricks to get them there:</p>
 
 
+<aside class="examples">
+  <h3>Tricks</h3>
+  <p>These are some tricks to get to one of the three examples above.
+  <h4>Move a corner to the top layer</h4>
+  <div class="cuberender no-moves">
+    <ul class="cube-layout">
+      <li class="f">* * * * R * * R G</li>
+      <li class="u">* * * * Y G * * *</li>
+      <li class="r">W * * G G * * * *</li>
+      <li class="l">* * * R B B * * *</li>
+      <li class="b">* * * * O * * O *</li>
+      <li class="d">* W R W W W * W *</li>
+    </ul>
 
+    <ol class="moves">
+      <li>R</li>
+      <li>U</li>
+      <li>Ri</li>
+    </ol>
+  </div>
+
+  <h4>Split two pieces</h4>
+  <p>Note: in this example the slot between the green and orange faces, should not be properly filled already. Rotete the top layer in such a way that you do not "destroy" the already solved bit.</p>
+  <div class="cuberender no-moves">
+    <ul class="cube-layout">
+      <li class="f">* G G * R * * R *</li>
+      <li class="u">W R * * Y * * * *</li>
+      <li class="r">* * R G G * * * *</li>
+      <li class="l">* * * * B B * * *</li>
+      <li class="b">* * * * O * * O *</li>
+      <li class="d">* W * W W W * W *</li>
+    </ul>
+
+    <ol class="moves">
+      <li>Ri</li>
+      <li>U</li>
+      <li>R</li>
+    </ol>
+  </div>
+</aside>
+
+
+<aside class="result">
+  <h3>Your cube should look like this:</h3>
+  <div class="cuberender no-moves">
+    <ul class="cube-layout">
+        <li class="f">* * * R R R R R R</li>
+        <li class="u">* * * * Y * * * *</li>
+        <li class="r">G G * G G * G G *</li>
+        <li class="l">* B B * B B * B B</li>
+        <li class="b">* * * O O O O O O</li>
+        <li class="d">W W W W W W W W W</li>
+    </ul>
+
+    <ol class="moves">
+      <li>E2</li>
+      <li>D2</li>
+      <li>E2</li>
+      <li>D2</li>
+    </ol>
+  </div>
+</aside>
+
+
+<hr>
 
 
 
@@ -214,6 +298,7 @@ permalink: /en/solve-a-rubiks-cube/
 <p>A small case version of the letters (<em><code>u f r b l d</code></em>) indicate moving the <strong>two layers</strong> as seen from that face. (An <em><code>r</code></em>-move is the same as a <em><code>Li</code></em> combined with rotating the whole cube.)</p>
 
 
+<hr>
 
 
 <h2 id="step-3">Step three: make a cross on the top</h2>
@@ -288,6 +373,28 @@ permalink: /en/solve-a-rubiks-cube/
 </aside>
 
 
+<aside class="result">
+  <h3>Your cube should look like this:</h3>
+  <div class="cuberender no-moves">
+    <ul class="cube-layout">
+        <li class="f">* * * R R R R R R</li>
+        <li class="u">* Y * Y Y Y * Y *</li>
+        <li class="r">G G * G G * G G *</li>
+        <li class="l">* B B * B B * B B</li>
+        <li class="b">* * * O O O O O O</li>
+        <li class="d">W W W W W W W W W</li>
+    </ul>
+
+    <ol class="moves">
+      <li>E2</li>
+      <li>D2</li>
+      <li>E2</li>
+      <li>D2</li>
+    </ol>
+  </div>
+</aside>
+
+<hr>
 
 <h2 id="step-4">Step four: make the top solid</h2>
 <p>In most cases, the four top cornerpieces need to be rotated, to have the correct parts of the cornerpieces facing up. It can be that all of them need to be solved, only three or two, or none. If there is only one cornerpiece that needs to be rotated, the cube has been tampered with.</p>
@@ -343,7 +450,30 @@ permalink: /en/solve-a-rubiks-cube/
 </aside>
 
 
+<aside class="result">
+  <h3>Your cube should look like this:</h3>
+  <div class="cuberender no-moves">
+    <ul class="cube-layout">
+        <li class="f">* * * R R R R R R</li>
+        <li class="u">Y Y Y Y Y Y Y Y Y</li>
+        <li class="r">G G * G G * G G *</li>
+        <li class="l">* B B * B B * B B</li>
+        <li class="b">* * * O O O O O O</li>
+        <li class="d">W W W W W W W W W</li>
+    </ul>
 
+    <ol class="moves">
+      <li>U2</li>
+      <li>E2</li>
+      <li>D2</li>
+      <li>U2</li>
+      <li>E2</li>
+      <li>D2</li>
+    </ol>
+  </div>
+</aside>
+
+<hr>
 <h2 id="step-5">Step five: cycling three cornerpieces</h2>
 <p>Position a cornerpiece you <strong>don't</strong> want to cycle in the <strong>front-left</strong> position. The following algorithm cycles the back-left piece to the back-right position, the back-right piece to the front-right position and the front-right piece to the back-left position. The solid top colour remains intact.</p>
 <p><em><code>li U Ri D2 R Ui Ri D2 R2</code></em></p>
@@ -383,6 +513,30 @@ permalink: /en/solve-a-rubiks-cube/
   </div>
 </aside>
 
+<aside class="result">
+  <h3>Your cube should look like this:</h3>
+  <div class="cuberender no-moves">
+    <ul class="cube-layout">
+        <li class="f">R * R R R R R R R</li>
+        <li class="u">Y Y Y Y Y Y Y Y Y</li>
+        <li class="r">G G G G G * G G G</li>
+        <li class="l">B B B * B B B B B</li>
+        <li class="b">O * O O O O O O O</li>
+        <li class="d">W W W W W W W W W</li>
+    </ul>
+
+    <ol class="moves">
+      <li>U2</li>
+      <li>E2</li>
+      <li>D2</li>
+      <li>U2</li>
+      <li>E2</li>
+      <li>D2</li>
+    </ol>
+  </div>
+</aside>
+
+<hr>
 
 <h2 id="step-6">Step six: cycling three edgepieces</h2>
 <p>The last part involves putting the edgepieces in the correct place. You'll have either all edges correct, or there are three or four edges incorrect. In that case you can rotate three edges clockwise. The edge you don't want to cycle needs to be on the <b>front-left</b> position.</p>
@@ -415,6 +569,31 @@ permalink: /en/solve-a-rubiks-cube/
       <li>R</li>
       <li>U</li>
       <li>R2</li>
+    </ol>
+  </div>
+</aside>
+
+<aside class="result">
+  <h3>Your cube should look like this:</h3>
+  <p>If it does: congratulations!</p>
+  <p>If it does not: please let me know where / how you got stuck.</p>
+  <div class="cuberender no-moves">
+    <ul class="cube-layout">
+        <li class="f">R R R R R R R R R</li>
+        <li class="u">Y Y Y Y Y Y Y Y Y</li>
+        <li class="r">G G G G G G G G G</li>
+        <li class="l">B B B B B B B B B</li>
+        <li class="b">O O O O O O O O O</li>
+        <li class="d">W W W W W W W W W</li>
+    </ul>
+
+    <ol class="moves">
+      <li>U2</li>
+      <li>E2</li>
+      <li>D2</li>
+      <li>U2</li>
+      <li>E2</li>
+      <li>D2</li>
     </ol>
   </div>
 </aside>
